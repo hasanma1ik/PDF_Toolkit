@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <style>
+    .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 150px;
+        }
+
+        .box {
+            width: 30%;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        .box h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">GoTo-PDF</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="container my-3">
+      <h1>Your Go-To PDF Merger Tool!</h1>
+      <form method="post" action="/merge" enctype='multipart/form-data'>
+        <div class="form-group">
+          <label for="PDF-File1">Select the first PDF file</label>
+          <input type="file" name="pdfs" class="form-control-file" id="PDF-File1" multiple accept=".pdf">
+        </div>
+        <div class="form-group">
+          <label for="PDF-File-2">Select the second PDF file</label>
+          <input type="file" name="pdfs" class="form-control-file" id="PDF-File2" multiple accept=".pdf">
+        </div>
+        <input class="btn btn-primary my-4" type="submit" value="Merge PDF">
+      </form>
+    </div>
+   
+    <div class="container">
+      <div class="box">
+          <h2>Reliable Tool</h2>
+          <p>This service allows you to safely merge your pdf files. Furthermore, it enables you to review your documents comfortably</p>
+      </div>
+      <div class="box">
+          <h2>Preview Tool</h2>
+          <p>Before downloading your combined pdf, "Your Go-To PDF Tool" allows you to preview the merged file.</p>
+      </div>
+      <div class="box">
+          <h2>Operates in all browsers</h2>
+          <p>This PDF merger tool operates universally, compatibale with all web browsers.</p>
+      </div>
+  </div>
+
+    
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
