@@ -1,18 +1,13 @@
-{
-  "name": "pdf_toolkit",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2",
-    "multer": "^1.4.5-lts.1",
-    "pdf-merger-js": "^4.3.0"
-  }
-}
+{"homepage":"https://hasanma1ik.github.io/PDF_ToolKit",
+"name":"PDF_ToolKit",
+"version":"1.0.0",
+"description":"",
+"main":"server.js",
+"scripts":{ "predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+
+  "test":"echo \"Error: no test specified\" && exit 1",
+
+"start":"node server.js"
+},
+"keywords":[],"author":"","license":"ISC","dependencies":{"express":"^4.18.2","gh-pages":"^5.0.0","multer":"^1.4.5-lts.1","pdf-merger-js":"^4.3.0"}}
